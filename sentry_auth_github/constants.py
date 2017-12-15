@@ -19,7 +19,7 @@ ERR_NO_VERIFIED_PRIMARY_EMAIL = 'We were unable to find a verified, primary emai
 ERR_NO_SINGLE_VERIFIED_PRIMARY_EMAIL = 'We were unable to find a single verified, primary email address associated with your GitHub acount.'
 
 # we request repo as we share scopes with the other GitHub integration
-SCOPE = ','.join(filter(None, ['user:email', getattr(settings, 'GITHUB_REQUIRE_PERMS', None)]))
+SCOPE = ','.join(filter(None, ['user:email', 'read:org', getattr(settings, 'GITHUB_REQUIRE_PERMS', None)]))
 
 # deprecated please use GITHUB_API_DOMAIN and GITHUB_BASE_DOMAIN
 DOMAIN = getattr(settings, 'GITHUB_DOMAIN', 'api.github.com')
