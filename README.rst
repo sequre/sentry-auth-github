@@ -8,7 +8,7 @@ Install
 
 ::
 
-    $ pip install https://github.com/getsentry/sentry-auth-github/archive/master.zip
+    $ pip install https://github.com/sequre/sentry-auth-github/archive/master.zip
 
 Setup
 -----
